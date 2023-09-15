@@ -1,0 +1,100 @@
+* 
+{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* typsnittet på sidan */
+
+}
+.header{ /* Header för meny */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: #85586F;
+}
+.header h3 {
+    font-size: 20px;
+    color: white;
+}
+.logo{ /* Portfolio "logga" */
+    font-size: 25px;
+    color:  #85586F;
+    text-decoration: none;
+    font-weight: 700;
+}
+.navbar a { /* menyval i header */
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+.navbar a:hover { /* detta gör texten svart när man håller på menyvalen*/
+    color: black;
+}
+.home {
+ height: 100vh;
+ background-color:  #DFD3C3; 
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+ padding:  0 10%;
+}
+.home-content h1 {
+    font-size: 70px;
+    font-weight: 600;
+    color:  white;
+    text-shadow: 2px 2px 2px black;
+}
+.home-content h3 {
+    font-size: 30px;
+    color:  #85586F;
+    text-align: center;
+}
+footer {  
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+
+}
+.icons  a{ /* ikoner längst ner på sidan*/
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #85586F;
+    font-size: 40px;
+}
+@media (max-width: 600px) {
+    .header {
+        width: 100%;
+    }
+    .home-image img {
+        width: 100%;
+        display: inline; 
+        object-fit: cover;
+    }
+    .navbar {
+        text-align: justify;
+        display: block; flex-direction:row-reverse
+    }
+    .home-content {
+       font-size: 2rem;
+       text-align: justify;
+       display: block;
+       margin-bottom: 30px;
+    }
+    
+}
